@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #40a8ee 50%, #199cf3 50%);
+}
+
+.container {
+    position: relative;
+    background: #ffffff;
+    border-radius: 30px;
+    width: 700px;
+    height: 340px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .1);
+}
+
+.container .progress {
+    display: flex;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.progress .progress-bar {
+    position: absolute;
+    left: 150px;
+    width: 60%;
+    height: 15px;
+    border-radius: 30px;
+    background: #e2e2e2;
+}
+
+.progress .progress-bar::before{
+    content: "";
+    width: calc(var(--progress) * 1%);
+    background-color: hsl( calc(var(--progress) * 1.2) , 80%, 50%);
+    transition: all 0.2s ease;
+}
+
+.progress .progress-bar .progressing {
+    width: 0;
+    height: 100%;
+    background: blue;
+    border-radius: 30px;
+}
+
+.progress .progress-bar .icon {
+    position: absolute;
+    display: flex;
+    width: 40px; 
+    height: 40px;
+    background: url(star-of-david.svg) no-repeat center;
+    /*background-color: black;*/
+    transform: translateY(-50px) translateX(-10px);
+}
+
+.progress .progress-bar .highlighter {
+    position: absolute;
+    left: 90px;
+    width: 2px;
+    height: 24px;
+    background: #ffffff;
+    border: 3px solid blue;
+    transform: translateY(-20px) translateX(-10px);
+}
+
+.progress .progress-bar .processvalue {
+    position: absolute;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background: #ffffff;
+    transform: translateY(10px) translateX(-10px);
+}
+
