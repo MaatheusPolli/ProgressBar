@@ -14,7 +14,6 @@ body {
 } 
 
 .container {
-    position: relative;
     background: #ffffff;
     border-radius: 30px;
     width: 700px;
@@ -26,59 +25,57 @@ body {
 
 .container .progress {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 100%;
     margin: 50px auto;
-    background-color: black;
 }
 
-.progress .progress-bar {
-    position: absolute;
+.progress-bar {
     left: 150px;
-    width: 60%;
+    width: 100%;
     height: 15px;
     border-radius: 30px;    
-    background: linear-gradient(90deg, #818181 50%, #199cf3 50%);
+    background: rgb(252,252,252);
+    background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(4,32,233,1) 100%);
 }
 
-.progress .progress-bar .progressing {
+.progressing {
     width: 0px;
     height: 100%;
     border-radius: 30px;
 }
 
-.progress .progress-bar .icon {
-    position: absolute;
+.icon {
     display: flex;
     width: 40px; 
     height: 40px;
     background: url(star-of-david.svg) no-repeat center;
-    transform: translateY(-65px) translateX(-22px);
 }
 
-.progress .progress-bar .highlighter {    
-    position: absolute;
-    left: 10px;
-    width: 0px;
+.highlighter {    
     height: 25px;
     background: #ffffff;
-    border: 3px solid blue;
-    transform: translateY(-20px) translateX(-15px);
+    border: 2px solid blue;
 }
 
-.progress .progress-bar .processvalue {
-    position: absolute;
-    left: 0;
+.processvalue {
     width: 24px;
-    height: 25px;
-    background: #ffffff;
-    transform: translateY(10px) translateX(-15px);
+    height: 40px;
+    /* background: #ffffff; */
 }
 
-.progress .progress-bar .groupProcess {
-    left: 1px;
-    background: transparent;
+.groupProcess {
+    position: fixed;
+    left: 500px;
+    width: 100px;
+    height: 120px;
     display: flex;
-    padding-top: 15px;
-    transform: translateY(0px) translateX(100%);
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
 }
 
