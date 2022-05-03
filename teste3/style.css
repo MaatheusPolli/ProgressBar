@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.define-percent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    padding: 10px;
+    color: white;
+}
+
+input {
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+button {
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.skills h2 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.progress-bar {
+    background-color: #959595;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar .Africa {
+    height: 10px;
+    border-radius: 5px;
+    width: 23%;
+    background-color: red;
+}
+
+.progress-bar div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #222;
+    border: 1px solid red;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
