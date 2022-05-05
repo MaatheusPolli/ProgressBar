@@ -5,5 +5,10 @@ const spanPercent = document.querySelector('[data-js="africa"] .percent');
 
 button.addEventListener('click', () => {
     percentBar.style.width = `${inputValue.value}%`;
-    spanPercent.innerHTML = `${inputValue.value}%`;
+    spanPercent.innerHTML = `${inputValue.value}%`;             
 });
+
+function loadColor(){
+    const teste = document.getElementsById('.icon');
+
+};
