@@ -9,18 +9,27 @@
 </head>
 <body>
     <div class="container">
+        <h1>Progress Bar Simulator</h1>
         <div class="define-percent">
             <div class="input">
                 <label for="percent">Insira o percentual</label>
                 <input type="text" name="percent" data-js="input-value">
             </div>
             <button data-js="change-percentual">Alterar Percentual</button>
+            <button data-js="change-blue">Alterar cor: Azul</button>
+            <button data-js="change-yellow">Alterar cor: Amarelo</button>
+            <button data-js="change-red">Alterar cor: Vermelho</button>
         </div>
 
         <div class="skills">
-            <h2>Africa</h2>
             <div class="progress-bar">
-                <div class="Africa" data-js="africa"><span>23%</span></div>
+                <div class="Africa" data-js="africa">
+                    <div class="progress-group">
+                        <img src="star-of-david.svg" class="icon" data-js="icon"> 
+                        <span class="tik"></span>
+                        <span class="percent">23%</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

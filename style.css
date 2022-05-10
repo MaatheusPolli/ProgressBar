@@ -25,6 +25,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 
 label {
@@ -54,30 +55,55 @@ button {
 }
 
 .progress-bar {
-    background-color: #959595;
+    background: rgb(252,252,252);
+    background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(4,32,233,1) 100%);
     width: 600px;
     height: 10px;
     border-radius: 5px;
+    margin-top: 80px;
 }
 
 .progress-bar .Africa {
     height: 10px;
     border-radius: 5px;
     width: 23%;
-    background-color: red;
+    filter: grayscale(87%) sepia(100%) hue-rotate(167deg) saturate(596%);
 }
 
-.progress-bar div span {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: #222;
-    border: 1px solid red;
+.progress-bar div .progress-group {
+    height: 100px;
+    width: 35px;
+    background-color: transparent;
     float: right;
-    margin-top: -15px;
+    margin-top: -55px;
     margin-right: -20px;
-    color: #FFF;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.Africa img {
+    width: 35px;
+    height: 35px; 
+    margin-top: 5px; 
+}
+
+.tik {
+    border: 2px solid;
+    height: 18px;
+    right: 15px;    
+}
+
+.icon {    
+    height: 35%;
+    right: 35%;
+    margin-top: 20%;
+}
+
+
+.container > h1 {
+    color: white;
+    font-size: 42px;
 }
