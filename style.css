@@ -1,3 +1,4 @@
+/* o * quer dizer que vale para página toda essas configurações de estilo */
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/* neste caso esse estilo vale apenas para a class="container" informada no HTML*/
 .container {
     width: 100%;
     height: 100vh;
@@ -45,35 +47,27 @@ button {
     cursor: pointer;
 }
 
-.skills h2 {
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-top: 40px;
-    margin-bottom: 5px;
-    color: white;
-    font-size: 16px;
-}
-
 .progress-bar {
     background: rgb(252,252,252);
-    background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(4,32,233,1) 100%);
-    width: 600px;
-    height: 10px;
+    /* Definido a regua de cores gradiente da progress bar, 1 cor inicio 2 fim.  Os deg da pra ajustar o angulo que funciona o degrade na imagem*/
+    background: linear-gradient(100deg, rgb(252, 251, 251) 0%, rgba(4,32,233,1) 100%); 
+    width: 600px; /* Tamanho da barra de progresso */ 
+    height: 10px; /* Altura/Grossura */
     border-radius: 5px;
     margin-top: 80px;
 }
 
+/* neste caso esse estilo vale apenas para a class="Africa" que está dentro da class="progress-bar" informada no HTML*/
 .progress-bar .Africa {
     height: 10px;
     border-radius: 5px;
-    width: 23%;
-    filter: grayscale(87%) sepia(100%) hue-rotate(167deg) saturate(596%);
+    width: 0%; /* Lugar que fica o pipe na barra ou seja, 0 a 100% */
 }
 
 .progress-bar div .progress-group {
     height: 100px;
     width: 35px;
-    background-color: transparent;
+    background-color: transparent;  /* Remove a sombra */
     float: right;
     margin-top: -55px;
     margin-right: -20px;
@@ -81,7 +75,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    z-index: 999;
+    z-index: 999; /* Usado para ajustar "empilhamento" de imagens, sobrepor uma sobre a outra */
 }
 
 .Africa img {
@@ -101,7 +95,6 @@ button {
     right: 35%;
     margin-top: 20%;
 }
-
 
 .container > h1 {
     color: white;
